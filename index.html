@@ -9,11 +9,34 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             padding: 20px;
             background-color: #2c2c2c; /* Dark background color */
             color: white; /* White text color */
+            flex-direction: column; /* Ensure the title stays on top */
+            align-items: center;
         }
+
+        /* Title styling */
+        .page-title {
+            width: 100%;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #f0f0f0; /* Lighter color for the title */
+        }
+
+        /* Description styling */
+        .page-description {
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #ccc; /* Lighter text for description */
+        }
+
         .project-box {
             width: 200px;
             height: 200px;
@@ -29,11 +52,13 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Darker shadow */
             transition: transform 0.3s;
         }
+
         .project-box a {
             color: white;
             text-decoration: none;
             font-weight: bold;
         }
+
         .project-box:hover {
             transform: scale(1.05);
             background-color: #555; /* Slightly lighter gray on hover */
@@ -42,6 +67,17 @@
 </head>
 <body>
 
+    <!-- Page Title -->
+    <div class="page-title">
+        CSCI 361 Projects
+    </div>
+
+    <!-- Description -->
+    <div class="page-description">
+        Welcome to the project links page! Here you will find a list of different projects I'm working on, each with a link to their repository. Click on any of the boxes below to explore.
+    </div>
+
+    <!-- Project Boxes -->
     <div class="project-box">
         <a href="https://github.com/Chigiriq/361_P1">Project 1</a>
     </div>
